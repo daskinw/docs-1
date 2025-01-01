@@ -6,35 +6,38 @@
 
 ## Researchers
 
-## Enhanced Workload Status Visibility
+## Enhanced workload status visibility
 
-- Improved visibility into "failed" workloads.
-For workloads with the status "Failed," the user can hover over the status to view details of why the workload hasn’t been scheduled. (requires a minimum cluster version of TBD) - Alon
+- Users can now gain better insights into workloads with a "Failed" and status. By hovering over the status, you can view details of why the workload has not been scheduled. (requires a minimum cluster version of TBD) - Alon
 
-- Improved visibility into "Initializing" workloads.
-For workloads with the status "Initializing" the user can hover over the status to view details of why the workload is not running. (requires a minimum cluster version of TBD) - Alon
+- Users can now gain better insights into workloads with a "Initialization" status. By hovering over the status, you can view details of why the workload is not running. (requires a minimum cluster version of TBD) - Alon
 
-### Suspend/Resume Actions for Distributed Workloads
+### Stop/Run actions for distributed workloads
 
-You can now suspend and resume distributed workloads directly from the UI. This new capability enhances control over distributed workloads, enabling greater flexibility and resource management during operations. - Alon
+You can now stop and run distributed workloads directly from the UI. This new capability enhances control over distributed workloads, enabling greater flexibility and resource management. (requires a minimum cluster version of TBD) - Alon
 
-### Windows OS Support for CLI v2
+### Windows OS support for CLI v2
 
-CLI v2 now supports Windows operating systems. This update ensures a seamless experience for Windows users, enabling them to leverage the full capabilities of the CLI on their preferred platform. (requires a minimum cluster version of TBD) - Alon
+CLI v2 now supports Windows operating systems, enabling you to leverage the full capabilities of the CLI. (requires a minimum cluster version of TBD) - Alon
 
-### Added Idle GPU device in workloads table**
+### Visibility into idle GPU devices
 
-A new Idle GPU device column was added to show the allocated GPU devices that have been idle for more than 5 minutes.
+Added idle GPU device column to the Workloads table. The column displays allocated GPU devices that have been idle for more than 5 minutes, offering enhanced visibility into resource utilization and supporting more efficient workload management. Alon
 
-### Unified Command Structure for Consistency
+### Unified command structure for consistency
 
 To align with the Run:ai UI, we’ve unified the `distributed` command into the `training` command. The `training` command now includes a new sub-command to support distributed workloads, ensuring a more consistent and streamlined user experience across both the CLI and UI. (requires a minimum cluster version of TBD) - Alon
 
-### Pod Deletion Policy for Terminal Workloads
+### Improved command line interface autocompletion
 
-Administrators can now specify which pods should be deleted when a distributed workload reaches a terminal state (Completed/Failed) using cleanPodPolicy in CLI V2 and API. This enhancement provides greater control over resource cleanup and helps maintain a more organized and efficient cluster environment. - Alon
+CLI V2 now autocompletes nouns such as project names and workload names for better data consistency with the UI, auto-upgrades, and interactive mode. Alon (was in 2.19)
+
+### Pod deletion policy for terminal workloads
+
+Administrators can now specify which pods should be deleted when a distributed workload reaches a terminal state (completed/failed) using cleanPodPolicy in CLI V2 and API. This enhancement provides greater control over resource cleanup and helps maintain a more organized and efficient cluster environment. - Alon
 
 ### Configurable Workload Completion with Multiple Runs
+
 You can now define the number of runs a workload must complete to be considered finished. This enhancement improves the reliability and validity of training results by allowing multiple runs. When the number of runs is set above 1, you can also configure how many runs can be scheduled in parallel, with the parallel runs value limited to the total number of runs. This provides greater flexibility and control over workload execution and resource utilization.
 
 ### Configurable Grace Period for Workload Preemption
@@ -54,54 +57,62 @@ Add all inference
 
 ### Metrics and telemetry
 
-  Additional metrics and telemetry are available via the API. For more information, see the details below and in [Metrics API](../developer/metrics/metrics-api.md): Alon TBD
+  Additional metrics and telemetry are available via the API. For more details, see [Metrics API](../developer/metrics/metrics-api.md): Alon 
 
 * Metrics (over time)  
-    * Cluster  
-        * TOTAL_GPU_NODES  
-        * GPU_UTILIZATION_DISTRIBUTION  
-        * UNALLOCATED_GPU  
-    * Nodepool  
-        * TOTAL_GPU_NODES   
-        * GPU_UTILIZATION_DISTRIBUTION   
-        * UNALLOCATED_GPU  
-    * Workload  
-        * GPU_ALLOCATION  
-    * Node  
-        * GPU_UTILIZATION_PER_GPU  
-        * GPU_MEMORY_UTILIZATION_PER_GPU  
-        * GPU_MEMORY_USAGE_BYTES_PER_GPU  
-        * CPU_USAGE_CORES  
-        * CPU_UTILIZATION  
-        * CPU_MEMORY_USAGE_BYTES  
-        * CPU_MEMORY_UTILIZATION  
+    * Project  
+        * GPU_QUOTA 
+        * CPU_QUOTA_MILLICORES
+        * CPU_MEMORY_QUOTA_MB
+        * GPU_ALLOCATION
+        * CPU_ALLOCATION_MILLICORES
+        * CPU_MEMORY_ALLOCATION_MB 
+    * Department  
+        * GPU_QUOTA 
+        * CPU_QUOTA_MILLICORES
+        * CPU_MEMORY_QUOTA_MB
+        * GPU_ALLOCATION
+        * CPU_ALLOCATION_MILLICORES
+        * CPU_MEMORY_ALLOCATION_MB 
+
 * Telemetry (current time)  
-    * Node  
-        * ALLOCATED_GPUS  
-        * TOTAL_CPU_CORES  
-        * USED_CPU_CORES  
-        * ALLOCATED_CPU_CORES  
-        * TOTAL_GPU_MEMORY_BYTES  
-        * USED_GPU_MEMORY_BYTES  
-        * TOTAL_CPU_MEMORY_BYTES  
-        * USED_CPU_MEMORY_BYTES  
-        * ALLOCATED_CPU_MEMORY_BYTES  
-        * IDLE_ALLOCATED_GPUS
+    * Project  
+        * GPU_QUOTA 
+        * CPU_QUOTA 
+        * MEMORY_QUOTA
+        * GPU_ALLOCATION
+        * CPU_ALLOCATION
+        * MEMORY_ALLOCATION
+        * GPU_ALLOCATION_NON_PREEMPTIBLE
+        * CPU_ALLOCATION_NON_PREEMPTIBLE
+        * MEMORY_ALLOCATION_NON_PREEMPTIBLE 
+    * Department    
+        * GPU_QUOTA 
+        * CPU_QUOTA 
+        * MEMORY_QUOTA
+        * GPU_ALLOCATION
+        * CPU_ALLOCATION
+        * MEMORY_ALLOCATION
+        * GPU_ALLOCATION_NON_PREEMPTIBLE
+        * CPU_ALLOCATION_NON_PREEMPTIBLE
+        * MEMORY_ALLOCATION_NON_PREEMPTIBLE 
 
 ## Platform Administrator
 
-### TBD Reports
-Added Reports under Analytics to allow users to access and organize large amounts of data in a clear, CSV-formatted layout. Reports enable users to monitor resource consumption, analyze trends, and make data-driven decisions to optimize their AI workloads effectively. Alon
+### New Reports feature for Analytics
 
-### TBD Node pools
-Enhanced DETAILS tab for node pools to present metric graphs for the following: Alon
+The new Reports enables users to generate and organize large data in a structured, CSV-formatted layout. With this feature, users can monitor resource consumption, identify trends, and make informed decisions to optimize their AI workloads with greater efficiency. Alon
 
-* Node GPU allocation
-* GPU Utilization Distribution
-* GPU Utilization
-* GPU Memory Utilization
-* CPU Utilization
-* CPU Memory Utilization 
+### Enhanced metrics and details for node pools
+The DETAILS tab for node pools has been upgraded to include enhanced metric graphs, providing deeper insights into resource utilization. These enhancements allow users to better monitor and manage resource usage within their node pools, optimizing performance and efficiency. The following metrics are now available: Alon
+
+* Node GPU Allocation: View how GPUs are distributed across nodes. 
+* GPU Utilization Distribution: Understand the spread of GPU usage across workloads. 
+* GPU Utilization: Monitor overall GPU usage for better workload optimization. 
+* GPU Memory Utilization: Track memory usage on GPUs to prevent bottlenecks. 
+* CPU Utilization: Gain visibility into CPU resource usage across nodes. 
+* CPU Memory Utilization: Analyze memory consumption for efficient node management. 
+
 
 
 ## Infrastructure Administrator 
@@ -119,5 +130,8 @@ We’ve introduced a standardized and simplified approach to replica management 
 
 ## Deprecation notifications
 
+Alon
 
 ### API support and endpoint deprecations
+
+Alon
