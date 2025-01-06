@@ -21,7 +21,7 @@ layout:
 
 Welcome to the Run:ai documentation area. For an introduction about what is the Run:ai Platform see [Run:ai platform](https://www.run.ai/platform/) on the run.ai website.
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>SaaS</strong></td><td></td><td></td><td><a href=".gitbook/assets/Screen Shot 2025-01-06 at 12.13.23 PM.png">Screen Shot 2025-01-06 at 12.13.23 PM.png</a></td></tr><tr><td><strong>Self-Hosted</strong></td><td></td><td></td><td><a href=".gitbook/assets/Screen Shot 2025-01-06 at 12.13.59 PM.png">Screen Shot 2025-01-06 at 12.13.59 PM.png</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>SaaS</strong></td><td></td><td>Performance</td><td>Workloads</td><td></td><td><a href=".gitbook/assets/Screen Shot 2025-01-06 at 12.13.23 PM.png">Screen Shot 2025-01-06 at 12.13.23 PM.png</a></td></tr><tr><td><strong>Self-Hosted</strong></td><td></td><td>Configuration</td><td>Maintenance</td><td>Troubleshooting</td><td><a href=".gitbook/assets/Screen Shot 2025-01-06 at 12.13.59 PM.png">Screen Shot 2025-01-06 at 12.13.59 PM.png</a></td></tr></tbody></table>
 
 
 
