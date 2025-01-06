@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Run:ai System Components](README.md)
+* [Run.ai Documentation Library](README.md)
+* [Run:ai System Components](<README (1).md>)
 * [data-privacy-details](data-privacy-details.md)
 * [Run:ai Documentation Library](overview.md)
 * [What's New for the Run:ai SaaS Platform](saas-updates.md)
