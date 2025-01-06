@@ -25,10 +25,14 @@ Welcome to the Run:ai documentation area. For an introduction about what is the 
 
 
 
-### How to Get Support[¶](https://docs.run.ai/v2.19/home/overview/#how-to-get-support) <a href="#how-to-get-support" id="how-to-get-support"></a>
+{% hint style="info" %}
+**How to Get Support**
 
 To get support use the following channels:
 
 * On the Run:ai user interface at `<company-name>.run.ai`, use the 'Contact Support' link on the top right.
 * Or submit a ticket by clicking [**here**](https://runai.secure.force.com/casesupport/CreateCaseForm)
+{% endhint %}
+
+
 
