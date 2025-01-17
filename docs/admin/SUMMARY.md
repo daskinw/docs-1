@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Overview: Infrastructure Administrator](README.md)
-* [Code blocks test](code-blocks-test.md)
 * [config](config/README.md)
   * [Understand the Kubernetes Cluster Access provided to Run:ai](config/access-roles.md)
   * [Administrator Messages](config/admin-messages.md)
@@ -24,11 +23,6 @@
   * [Secure your cluster](config/secure-cluster.md)
   * [shared-storage](config/shared-storage.md)
   * [Workload Deletion Protection](config/workload-ownership-protection.md)
-* [maintenance](maintenance/README.md)
-  * [alert-monitoring](maintenance/alert-monitoring.md)
-  * [audit-log](maintenance/audit-log.md)
-  * [node-downtime](maintenance/node-downtime.md)
-  * [Monitoring and maintenance Overview](maintenance/overview.md)
 * [researcher-setup](researcher-setup/README.md)
   * [Install the Run:ai V1 Command-line Interface](researcher-setup/cli-install.md)
   * [docker-to-runai](researcher-setup/docker-to-runai.md)
@@ -84,3 +78,13 @@
     * [openidconnect](authentication/sso/openidconnect.md)
     * [openshift](authentication/sso/openshift.md)
     * [saml](authentication/sso/saml.md)
+* [maintenance](maintenance/README.md)
+  * [alert-monitoring](maintenance/alert-monitoring.md)
+  * [audit-log](maintenance/audit-log.md)
+  * [node-downtime](maintenance/node-downtime.md)
+  * [Monitoring and maintenance Overview](maintenance/overview.md)
+  * [Code blocks test](maintenance/code-blocks-test.md)
+
+## Group 1
+
+* [Cimpress docs](group-1/cimpress-docs.md)
