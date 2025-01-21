@@ -1,11 +1,11 @@
 # Table of contents
 
 * [Overview: Platform Administrator](README.md)
-* [AI Initiatives](overview-1.md)
 * [Org](org/README.md)
   * [departments](org/departments.md)
   * [projects](org/projects.md)
   * [scheduling-rules](org/scheduling-rules.md)
+  * [AI Initiatives](org/overview.md)
 * [Node Pools](node-pools/README.md)
   * [nodes](node-pools/nodes.md)
 * [Integrations with Run:ai](integration-overview.md)

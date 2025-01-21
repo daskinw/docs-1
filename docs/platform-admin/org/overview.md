@@ -17,7 +17,7 @@ The way you map your AI initiatives and organization into Run:ai projects and de
 A typical use case would be students (individual practitioners) within a faculty (business unit) - an individual practitioner may be involved in one or more initiatives. In this example, the resources are accounted for by the student (project) and aggregated per faculty (department).\
 Department = business unit / Project = individual practitioner
 
-![](aiinitiatives/img/individuals.png)
+![](../aiinitiatives/img/individuals.png)
 
 ### Based on business units
 
@@ -25,7 +25,7 @@ A typical use case would be an AI service (business unit) split into AI capabili
 
 Department = business unit / Project = initiative
 
-![](aiinitiatives/img/bu.png)
+![](../aiinitiatives/img/bu.png)
 
 ### Based on the organizational structure
 
@@ -33,7 +33,7 @@ A typical use case would be a business unit split into teams - an individual pra
 
 Department = business unit / Project = team
 
-![](aiinitiatives/img/org.png)
+![](../aiinitiatives/img/org.png)
 
 ## Mapping your resources
 
@@ -60,11 +60,11 @@ Set out below are illustrations of different grouping options.
 
 Example: grouping nodes by topology
 
-![](aiinitiatives/img/groupbytopology.png)
+![](../aiinitiatives/img/groupbytopology.png)
 
 Example: grouping nodes by hardware type
 
-![](aiinitiatives/img/groupbyhardware.png)
+![](../aiinitiatives/img/groupbyhardware.png)
 
 ### Assigning your resources
 
@@ -78,7 +78,7 @@ It is essential to make sure that the sum of all projects' quota does NOT surpas
 
 Example: assigning resources to projects
 
-![](aiinitiatives/img/assigning.png)
+![](../aiinitiatives/img/assigning.png)
 
 ## Assigning users to projects and departments
 
@@ -97,16 +97,16 @@ The Scheduler’s main role is to find the best-suited node or nodes for each su
 
 This is an example of an organization, as represented in the Run:ai platform:
 
-![](aiinitiatives/img/scopes.png)
+![](../aiinitiatives/img/scopes.png)
 
 The organizational tree is structured from top down under a single node headed by the account. The account is comprised of clusters, departments and projects.
 
-!!! Note Different [roles and permissions](../admin/authentication/authentication-overview.md#role-based-access-control-rbac-in-runai) can be granted to specific clusters, departments and projects within an organization.
+!!! Note Different [roles and permissions](../../admin/authentication/authentication-overview.md#role-based-access-control-rbac-in-runai) can be granted to specific clusters, departments and projects within an organization.
 
 The organizational tree is structured from top down under a single node headed by the account. The account is comprised of clusters, departments and projects.
 
 After mapping and building your hierarchal structured organization as shown above, you can assign or associate various Run:ai components (e.g. workloads, roles, assets, policies, and more) to **different parts** of the organization - these organizational parts are the **Scopes**. The following organizational example consists of 5 optional scopes:
 
-![](aiinitiatives/img/scope-example.png)
+![](../aiinitiatives/img/scope-example.png)
 
 !!! Note When a scope is selected, the very same unit, including all of its subordinates (both existing and any future subordinates, if added), are selected as well.
