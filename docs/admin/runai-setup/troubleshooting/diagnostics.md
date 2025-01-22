@@ -4,24 +4,25 @@
 
 Run:ai Self-hosted installation contains an internal database. To diagnose database issues, you can run the database in debug mode.
 
-In the runai-backend-values, search for `postgresql`. Add: 
+In the runai-backend-values, search for `postgresql`. Add:
 
-``` YAML
+{% include "../../.gitbook/includes/bullets.md" %}
+
+```yaml
 postgresql:
   image:
     debug: true
 ```
 
-Re-install the Run:ai control-plane and then review the database logs by running: 
+Re-install the Run:ai control-plane and then review the database logs by running:
 
 ```
 kubectl logs -n runai-backend runai-postgresql-0
 ```
 
-
 ## Internal Networking Issues
 
-Run:ai is based on Kubernetes. Kubernetes runs its own internal subnet with a separate DNS service. If you see in the logs that services have trouble connecting, the problem may reside there.  You can find further information on how to debug Kubernetes DNS [here](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/){target=_blank}. Specifically, it is useful to start a pod with networking utilities and use it for network resolution:
+Run:ai is based on Kubernetes. Kubernetes runs its own internal subnet with a separate DNS service. If you see in the logs that services have trouble connecting, the problem may reside there. You can find further information on how to debug Kubernetes DNS [here](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/){target=\_blank}. Specifically, it is useful to start a pod with networking utilities and use it for network resolution:
 
 ```
 kubectl run -i --tty netutils --image=dersimn/netutils -- bash
@@ -37,7 +38,7 @@ kubectl edit runaiconfig runai -n runai
 
 Add a `debug` log level:
 
-``` YAML
+```yaml
 prometheus-operator:
   prometheus:
     prometheusSpec:
@@ -45,7 +46,8 @@ prometheus-operator:
 ```
 
 To view logs, run:
-``` 
+
+```
 kubectl logs prometheus-runai-prometheus-operator-prometheus-0 prometheus \
       -n monitoring -f --tail 100
 ```
@@ -66,5 +68,4 @@ runai-scheduler:
      verbosity: 6
 ```
 
-!!! Warning
-    Verbose scheduler logs consume a significant amount of disk space.
+!!! Warning Verbose scheduler logs consume a significant amount of disk space.
