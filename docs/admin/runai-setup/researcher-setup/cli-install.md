@@ -6,7 +6,7 @@ The instructions below will guide you through the process of installing the CLI.
 
 ## Researcher Authentication
 
-When enabled, Researcher authentication requires additional setup when installing the CLI. To configure authentication see [Setup Project-based Researcher Access Control](../authentication/researcher-authentication.md). Use the modified Kubernetes configuration file described in the article.
+When enabled, Researcher authentication requires additional setup when installing the CLI. To configure authentication see [Setup Project-based Researcher Access Control](../../authentication/researcher-authentication.md). Use the modified Kubernetes configuration file described in the article.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ kubectl get nodes
 
 \=== "Windows" Rename the downloaded file to have a `.exe` extension and move the file to a folder that is a part of the `PATH`.
 
-!!! Note An alternative way of downloading the CLI is provided under the [CLI Troubleshooting](../runai-setup/troubleshooting/troubleshooting.md#command-line-interface-issues) section.
+!!! Note An alternative way of downloading the CLI is provided under the [CLI Troubleshooting](../troubleshooting/troubleshooting.md#command-line-interface-issues) section.
 
 To verify the installation run:
 
@@ -87,7 +87,7 @@ It is possible to configure your Linux/Mac shell to complete Run:ai CLI commands
 
 ## Troubleshoot the CLI Installation
 
-See [Troubleshooting a CLI installation](../runai-setup/troubleshooting/troubleshooting.md#command-line-interface-issues)
+See [Troubleshooting a CLI installation](../troubleshooting/troubleshooting.md#command-line-interface-issues)
 
 ## Update the Run:ai CLI
 

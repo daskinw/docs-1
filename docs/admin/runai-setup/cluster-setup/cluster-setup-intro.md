@@ -29,4 +29,4 @@ For a list of advanced configuration scenarios such as configuring researcher au
 
 ### Next Steps
 
-After setting up the cluster, you may want to start setting up Researchers. See: [Researcher Setup](../../researcher-setup/researcher-setup-intro.md).
+After setting up the cluster, you may want to start setting up Researchers. See: [Researcher Setup](../researcher-setup/researcher-setup-intro.md).
