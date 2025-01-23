@@ -49,7 +49,7 @@ __Resolution:__ Verify that the certificate is valid and trusted. If the certifi
 
 ## Cluster Health
 
-See [Cluster Health Troubleshooting](../../config/clusters.md#troubleshooting-scenarios)
+See [Cluster Health Troubleshooting](../../authentication/config/clusters.md#troubleshooting-scenarios)
 
 ## Dashboard Issues
 

@@ -2,7 +2,7 @@
 
 Deploying Run:ai in mission-critical environments requires proper monitoring and maintenance of resources to ensure workloads run and are deployed as expected.
 
-Details on how to monitor different parts of the physical resources in your Kubernetes system, including [clusters](../config/clusters.md) and [nodes](../../platform-admin/aiinitiatives/resources/nodes.md), can be found in the monitoring and maintenance section. Adjacent configuration and troubleshooting sections also cover [high availability](../config/ha.md), [restoring](../config/dr.md) and [securing](../config/secure-cluster.md) clusters, [collecting logs](../runai-setup/troubleshooting/logs-collection.md), and [reviewing audit logs](audit-log.md) to meet compliance requirements.
+Details on how to monitor different parts of the physical resources in your Kubernetes system, including [clusters](../authentication/config/clusters.md) and [nodes](../../platform-admin/aiinitiatives/resources/nodes.md), can be found in the monitoring and maintenance section. Adjacent configuration and troubleshooting sections also cover [high availability](../authentication/config/ha.md), [restoring](../authentication/config/dr.md) and [securing](../authentication/config/secure-cluster.md) clusters, [collecting logs](../runai-setup/troubleshooting/logs-collection.md), and [reviewing audit logs](audit-log.md) to meet compliance requirements.
 
 In addition to monitoring Run:ai resources, it is also highly recommended to monitor Run:ai runs on Kubernetes, which manages containerized applications. In particular, focus on three main layers:
 
